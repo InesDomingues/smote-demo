@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -8,14 +7,12 @@ from sklearn.datasets import make_classification, load_breast_cancer
 from sklearn.decomposition import PCA
 from imblearn.over_sampling import SMOTE
 
-
 st.title("SMOTE Demo")
 
 st.write(
     "This app demonstrates how SMOTE creates synthetic examples "
     "to balance an imbalanced classification dataset."
 )
-
 
 dataset_option = st.selectbox(
     "Choose dataset",
