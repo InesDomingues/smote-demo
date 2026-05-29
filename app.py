@@ -118,7 +118,7 @@ st.pyplot(fig_before)
 
 if st.button("Apply SMOTE"):
 
-    smote = SMOTE(random_state=42)
+    smote = SMOTE()
     X_resampled, y_resampled = smote.fit_resample(X, y)
 
     df_resampled = pd.DataFrame(X_resampled, columns=X.columns)
