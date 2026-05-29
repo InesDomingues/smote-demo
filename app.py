@@ -31,7 +31,8 @@ if dataset_option == "Synthetic imbalanced dataset":
         n_redundant=0,
         n_informative=2,
         n_clusters_per_class=1,
-        weights=[0.90, 0.10]
+        weights=[0.90, 0.10],
+        random_state=42
     )
 
     df = pd.DataFrame(X, columns=["feature_1", "feature_2"])
